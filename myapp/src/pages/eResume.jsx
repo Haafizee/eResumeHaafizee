@@ -101,7 +101,7 @@ const ResumeWeb = () => {
                       <li key={i} className={`flex flex-col ${i > 0 ? (ach.icon === 'Star' ? 'border-t border-yellow-100 pt-2' : 'border-t border-blue-100 pt-2') : ''}`}>
                         <div className="flex justify-between items-start">
                           <span className="font-semibold text-gray-800">{item.title}</span>
-                          {item.badge && <span className="text-xs font-bold bg-gray-200 text-gray-700 px-2 py-0.5 rounded print:hidden">{item.badge}</span>}
+                          {(item.year || item.badge) && <span className="text-xs font-bold bg-gray-200 text-gray-700 px-2 py-0.5 rounded print:hidden">{item.year || item.badge}</span>}
                         </div>
                         <span className="text-sm text-gray-600">{item.org || item.desc}</span>
                       </li>

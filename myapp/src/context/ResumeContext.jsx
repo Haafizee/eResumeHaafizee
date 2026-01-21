@@ -16,18 +16,18 @@ const defaultResumeData = {
             category: "Kecemerlangan Perkhidmatan",
             icon: "Star",
             items: [
-                { title: "Anugerah Perkhidmatan Cemerlang (APC)", org: "PERDA | 2024" },
-                { title: "Anugerah Pengiktirafan PERDA", org: "PERDA | 2024" },
-                { title: "Anugerah Khas Pengurus Besar", org: "PERDA | 2023" }
+                { title: "Anugerah Perkhidmatan Cemerlang (APC)", org: "PERDA", year: "2024" },
+                { title: "Anugerah Pengiktirafan PERDA", org: "PERDA", year: "2024" },
+                { title: "Anugerah Khas Pengurus Besar", org: "PERDA", year: "2023" }
             ]
         },
         {
             category: "Bimbingan Inovasi & Kemahiran",
             icon: "Medal",
             items: [
-                { title: "Finalis WorldSkills Malaysia (WSMP)", desc: "Bidang: Mobile App Development | 2024" },
-                { title: "Pingat Perak (Silver Medal)", badge: "2025", desc: "Pertandingan Inovasi iCompex (Inovasi TVET)" },
-                { title: "Pingat Perak (Silver Medal)", badge: "2023", desc: "Pertandingan Inovasi iCompex (Inovasi TVET)" }
+                { title: "Finalis WorldSkills Malaysia (WSMP)", desc: "Bidang: Mobile App Development", year: "2024" },
+                { title: "Pingat Perak (Silver Medal)", desc: "Pertandingan Inovasi iCompex (Inovasi TVET)", year: "2025" },
+                { title: "Pingat Perak (Silver Medal)", desc: "Pertandingan Inovasi iCompex (Inovasi TVET)", year: "2023" }
             ]
         }
     ],

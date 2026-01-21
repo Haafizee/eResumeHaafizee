@@ -11,7 +11,7 @@ const KemaskiniResume = () => {
     // Templates for new items
     const defaultTemplates = {
         achievements: { category: "New Category", icon: "Star", items: [] },
-        achievementItem: { title: "New Achievement", org: "Organization" },
+        achievementItem: { title: "New Achievement", org: "Organization", year: "2024" },
         competencies: { category: "New Competency Category", icon: "Code", items: [] },
         competencyItem: "New Skill",
         experienceDetail: { title: "New Responsibility Area", items: [] },
@@ -248,6 +248,13 @@ const KemaskiniResume = () => {
                                                 value={item.org || item.desc || ''}
                                                 onChange={(e) => handleNestedArrayItemChange('achievements', idx, 'items', i, item.org !== undefined ? 'org' : 'desc', e.target.value)}
                                                 className="flex-1 border rounded p-2 text-sm"
+                                            />
+                                            <input
+                                                type="text"
+                                                placeholder="Year"
+                                                value={item.year || ''}
+                                                onChange={(e) => handleNestedArrayItemChange('achievements', idx, 'items', i, 'year', e.target.value)}
+                                                className="w-24 border rounded p-2 text-sm text-center"
                                             />
                                             <button onClick={() => handleRemoveNestedItem('achievements', idx, 'items', i)} className="text-red-400 hover:text-red-600 p-2">
                                                 <Trash2 size={16} />
